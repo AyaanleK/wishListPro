@@ -48,7 +48,7 @@
 
     <h2>List Wishes</h2>
     <hr/>
-    <a th:href="@{/addWishesForm}" class="btn btn-primary mb-2">Add Employee</a>
+    <a th:href="@{/addWishesForm}" class="btn btn-secondary mb-2">Add Employee</a>
     <table class="table table-bordered table-striped" id="pro_details">
 
         <thead>
@@ -71,7 +71,7 @@
 
             <td>
                 <a th:href="@{showUpdateForm(wisheID = ${mama.id})}"
-                   class="btn btn-info">Update</a>
+                   class="btn btn-primary">Update</a>
 
                 <a th:href="@{deleteWishesForm(wisheID = ${mama.id})}"
                    class="btn btn-danger ml-2">Delete</a>
