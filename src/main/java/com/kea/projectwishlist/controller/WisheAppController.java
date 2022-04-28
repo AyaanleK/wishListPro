@@ -18,7 +18,13 @@ public class WisheAppController {
   @Autowired
   private WisheRepository eRepo;
 
-  @GetMapping({"/","/showListWishes","/list"})
+  @GetMapping({"/","/home"})
+  public String index(){
+
+    return "home";
+  }
+
+  @GetMapping({"/showListWishes","/list"})
   public ModelAndView fairVoir(){
 
     ModelAndView fvoir = new ModelAndView("list-wishes");
